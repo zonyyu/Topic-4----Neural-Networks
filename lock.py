@@ -50,8 +50,8 @@ class App(QWidget):
         self.clear_button = QPushButton("Clear", self)
         self.clear_button.clicked.connect(self.clear)
         self.hbox2 = QHBoxLayout()
-        self.hbox2.addWidget(self.submit_button.setGeometry(self.width/2 - (150 + 60)*self.scale, self.height-100*self.scale, 150*self.scale, 50*self.scale))
-        self.hbox2.addWidget(self.clear_button.setGeometry(self.width/2 - (0 - 60)*self.scale, self.height-100*self.scale, 150*self.scale, 50*self.scale))
+        self.hbox2.addWidget(self.clear_button.setGeometry(self.width/2 - (150 + 60)*self.scale, self.height-100*self.scale, 150*self.scale, 50*self.scale))
+        self.hbox2.addWidget(self.submit_button.setGeometry(self.width/2 - (0 - 60)*self.scale, self.height-100*self.scale, 150*self.scale, 50*self.scale))
 
         self.vbox = QVBoxLayout()
         self.vbox.addLayout(self.hbox1)
@@ -78,8 +78,8 @@ class App(QWidget):
         height = event.size().height()
         width = event.size().width()
 
-        self.submit_button.move(width/2 - (150 + 60)*self.scale, height-100*self.scale)
-        self.clear_button.move(width/2 - (0 - 60)*self.scale, height-100*self.scale)
+        self.clear_button.move(width/2 - (150 + 60)*self.scale, height-100*self.scale)
+        self.submit_button.move(width/2 - (0 - 60)*self.scale, height-100*self.scale)
         QWidget.resizeEvent(self, event)
 
 

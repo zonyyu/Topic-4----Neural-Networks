@@ -88,8 +88,8 @@ def predict_nums(lst):
         nparr = np.maximum(np.minimum(np.array(img), 255), 0)
         proc_img.append(nparr.flatten())
     proc_img = np.array(proc_img)
-    sn.heatmap(proc_img[0].reshape(28, 28), annot=True)
-    plt.show()
+    #sn.heatmap(proc_img[0].reshape(28, 28), annot=True)
+    #plt.show()
 
     inputs = torch.from_numpy(proc_img).float()
     pred = model(inputs).detach().numpy()
