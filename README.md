@@ -158,9 +158,32 @@ This document will detail the content of material to be delivered **in order**.
   - Ask the students
     - What might cause the poor performance in this Neural Network.
 
+## About the Programming Exercise
+- There are three files:
+  - `nn.py`, `lock.py`, and `mnist.ipynb`
+
+- `lock.py` runs a GUI application that allows the user to draw in the boxes
+- `nn.py` will require you to copy over your `NN()` class and `CCE()` function
+  - `nn.py` already contains the skeleton for the `predict_num()` function, which has to be filled out.
+- `mnist.ipynb` is used to train the neural network.
+  - fill this notebook out, commentate while coding 
+  - use the comments in the code to guide you in your commentary.
 
 
+### Procedures
+- first complete `mnist.ipynb`
+  - fill this notebook out, commentate while coding 
+  - use the comments in the code to guide you in your commentary.
+  - If you feel the need to help students visualize by drawing in OneNote, do it. 
+  - at the end, save the model as `mnist_predictor.pt`
+  - if trained in google colab, be sure to download the model
+  
+- open `nn.py`
+  - Copy your code for the `NN()` class as well as the `CCE()` function into `nn.py`
+  - write code to load the model in
+  - fill out `predict_nums()` to process the input images and output prediction
 
+- run `lock.py` to see your neural network in action
 
 
 
