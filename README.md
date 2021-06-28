@@ -53,6 +53,8 @@ This document will detail the content of material to be delivered **in order**.
 
 ## Topic 4 -- Neural Networks
 
+- ***Please open this within Jupyter notebook***
+
 ### Installing Dependencies
 - Talk a bit about the dependencies you're using
 
@@ -168,6 +170,7 @@ This document will detail the content of material to be delivered **in order**.
 - `mnist.ipynb` is used to train the neural network.
   - fill this notebook out, commentate while coding 
   - use the comments in the code to guide you in your commentary.
+  - ***Train this notebook within google colab***
 
 
 ### Procedures
@@ -176,7 +179,7 @@ This document will detail the content of material to be delivered **in order**.
   - use the comments in the code to guide you in your commentary.
   - If you feel the need to help students visualize by drawing in OneNote, do it. 
   - at the end, save the model as `mnist_predictor.pt`
-  - if trained in google colab, be sure to download the model
+  - Since this is trained in google colab, be sure to download the model
   
 - open `nn.py`
   - Copy your code for the `NN()` class as well as the `CCE()` function into `nn.py`
